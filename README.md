@@ -1,17 +1,12 @@
-# quick-npm
+# analytics
 
-Quick start template to rapidly develop NPM packages with speed, and automations.
+Prebuilt analytics tool
 
 ## Install
 
 ```bash
-bun add @rayriffy/quick-npm
+bun add @rayriffy/analytics
 ```
-
-## Setting up
-
-1. Allow GitHub Actions to create pull request
-2. Generate NPM authotization token into `NPM_TOKEN` secret
 
 ## Publishing
 

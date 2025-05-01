@@ -1,8 +1,8 @@
 {
-  "name": "@rayriffy/quick-npm",
-  "version": "0.0.2",
+  "name": "@rayriffy/analytics",
+  "version": "0.0.1",
   "author": "Phumrapee Limpianchop <mail@rayriffy.com>",
-  "description": "Quick start template for publishing NPM package.",
+  "description": "Prebuilt analytics tool",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -16,16 +16,13 @@
     }
   },
   "repository": {
-    "url": "git+https://github.com/rayriffy/quick-npm"
+    "url": "git+https://github.com/rayriffy/analytics"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "files": [
-    "src",
-    "dist"
-  ],
+  "files": ["src", "dist"],
   "scripts": {
     "preinstall": "npx only-allow bun",
     "test": "vitest",
@@ -35,12 +32,15 @@
     "prepare": "bun run build"
   },
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "winston": "3.17.0",
+    "winston-loki": "6.1.3"
+  },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@changesets/cli": "2.29.2",
     "@tsconfig/node22": "22.0.1",
     "tsup": "8.4.0",
-    "typescript": "5.8.3",
-    "vitest": "3.1.2"
+    "typescript": "5.8.3"
   }
 }
