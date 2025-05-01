@@ -1,6 +1,6 @@
 {
   "name": "@rayriffy/analytics",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Phumrapee Limpianchop <mail@rayriffy.com>",
   "description": "Prebuilt analytics tool",
   "license": "MIT",
@@ -22,7 +22,10 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "files": ["src", "dist"],
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "preinstall": "npx only-allow bun",
     "test": "vitest",
